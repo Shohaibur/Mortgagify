@@ -15,15 +15,18 @@ const Navbar = () => {
             <Typography
               variant="h5"
               component="div"
-              color={"aqua"}
+              color="aqua"
               sx={{ flexGrow: 1, fontFamily: "-apple-system", fontWeight: 40 }}
             >
               Mortgagify
             </Typography>
-            <Button color="inherit" sx={{fontFamily:'a',fontWeight:40 }}>Login</Button>
+            <Button color="inherit" sx={{ fontFamily: "a", fontWeight: 40 }}>
+              Login
+            </Button>
           </Toolbar>
         </Container>
       </AppBar>
+      
     </Box>
   );
 };
