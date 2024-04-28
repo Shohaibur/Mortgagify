@@ -5,7 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { theme } from './theme.js';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
-import Navbar from './components/Navbar.js';
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,6 +15,7 @@ root.render(
 
       <CssBaseline />
     </ThemeProvider>
+    
   </React.StrictMode>
 );
 
