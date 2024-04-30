@@ -1,37 +1,31 @@
-import { Container, Slider, Grid } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import Navbar from "./components/common/Navbar";
 import MainContent from "./components/MainContent";
 import Result from "./components/Result";
+import SliderSelect from "./components/SliderSelect";
+import TenureSelect from "./components/TenureSelect";
+//import CustomSlider from "./components/Slider";
 
 
 function App() {
-  return (
-    // <div className="App">
-    //  <Navbar/>
-    //  <MainContent/>
-    //  <Container maxWidth="xl"  >
-    //  <Slider/>
-    //  </Container>
-    // </div>
+    return (
+      <div className="App">
+        <Navbar />
+        <Container maxWidth="xl" sx={{marginTop:4}}>
+        <Grid container spacing={5} >
+          <Grid item xs={12} md={6}>
+            <SliderSelect/>
+            <TenureSelect/>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Result/>
+          </Grid>
+          </Grid>
 
-    <div className="App">
-      <Navbar />
-      
-      <Grid container spacing={5}>
-        <Grid item xs={12} md={6}>
-          <Container maxWidth="xs" >
-          <MainContent />
-      <Slider />
-          </Container>
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Result />
-        </Grid>
-      </Grid>
+        </Container>
 
-    </div>
-
-  );
+      </div>
+    );
 }
 
 export default App;
