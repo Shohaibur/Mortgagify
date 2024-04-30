@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 const MainContent = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <Container maxWidth="xl">
+      <Container maxWidth="xl" sx={{marginTop:3}}>
         <Typography
           variant="h6"
           component="div"
