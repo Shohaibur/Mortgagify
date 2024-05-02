@@ -1,6 +1,6 @@
 import { Container, Grid } from "@mui/material";
 import Navbar from "./components/common/Navbar";
-import MainContent from "./components/MainContent";
+// import MainContent from "./components/MainContent";
 import Result from "./components/Result";
 import SliderSelect from "./components/SliderSelect";
 import TenureSelect from "./components/TenureSelect";
