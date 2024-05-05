@@ -1,5 +1,5 @@
 import React from "react";
-import { Divider, Slider, Stack, Typography } from "@mui/material";
+import { Slider, Stack, Typography } from "@mui/material";
 
 const SliderComponent = ({
   defaultValue,
