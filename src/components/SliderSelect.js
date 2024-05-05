@@ -8,50 +8,66 @@ const SliderSelect = ({ data, setData }) => {
       {/* <Stack spacing={1}>{(label = "Home Value")}</Stack> */}
       <Stack spacing={3.8} marginTop={7}>
         <SliderComponent
+          label={"Home Value"}
           min={1000}
           max={10000}
           defaultValue={data.homeValue} //on slider
           value={data.homeValue}
-          onChange={(e, value) => setData({ ...data, homeValue: value })} //state change
+          onChange={(e, value) =>
+            setData({
+              ...data,
+              downPayment: value * 0.2,
+              loanAmount: value * 0.8,
+              homeValue: value,
+            })
+          } //state change
           step={100}
           unit={"$"}
-          label={"Home Value"}
           amount={data.homeValue}
         />
-
         <SliderComponent
+          label={"Down Payment"}
           min={0}
-          max={5000}
+          max={data.homeValue}
           defaultValue={data.downPayment}
           value={data.downPayment}
           step={100}
-          onChange={(e, value) => setData({ ...data, downPayment: value })}
+          onChange={(e, value) =>
+            setData({
+              ...data,
+              loanAmount: data.homeValue - value,
+              downPayment: value,
+            })
+          }
           unit={"$"}
-          label={"Down Payment"}
           amount={data.downPayment}
         />
-
         <SliderComponent
+          label={"Loan Amount"}
           min={0}
-          max={5000}
+          max={data.homeValue}
           defaultValue={data.loanAmount}
           value={data.loanAmount}
           step={100}
-          onChange={(e, value) => setData({ ...data, loanAmount: value })}
+          onChange={(e, value) =>
+            setData({
+              ...data,
+              downPayment: data.homeValue - value,
+              loanAmount: value,
+            })
+          }
           unit={"$"}
-          label={"Loan Amount"}
           amount={data.loanAmount}
         />
-
         <SliderComponent
+          label={"Interest Rate"}
           min={2}
           max={17}
           defaultValue={data.interestRate}
           value={data.interestRate}
-          step={.5}
+          step={0.5}
           onChange={(e, value) => setData({ ...data, interestRate: value })}
           unit={"%"}
-          label={"Interest Rate"}
           amount={data.interestRate}
         />
       </Stack>
