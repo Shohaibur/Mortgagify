@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.js": "/(mortgagify-host)/static/js/main.1f197cc5.js",
-    "static/js/453.9c658fe1.chunk.js": "/(mortgagify-host)/static/js/453.9c658fe1.chunk.js",
-    "index.html": "/(mortgagify-host)/index.html",
-    "main.1f197cc5.js.map": "/(mortgagify-host)/static/js/main.1f197cc5.js.map",
-    "453.9c658fe1.chunk.js.map": "/(mortgagify-host)/static/js/453.9c658fe1.chunk.js.map"
+    "main.js": "/Mortgagify/static/js/main.0cf2faf8.js",
+    "static/js/453.9c658fe1.chunk.js": "/Mortgagify/static/js/453.9c658fe1.chunk.js",
+    "index.html": "/Mortgagify/index.html",
+    "main.0cf2faf8.js.map": "/Mortgagify/static/js/main.0cf2faf8.js.map",
+    "453.9c658fe1.chunk.js.map": "/Mortgagify/static/js/453.9c658fe1.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.1f197cc5.js"
+    "static/js/main.0cf2faf8.js"
   ]
 }
