@@ -13,7 +13,7 @@ const SliderComponent = ({
   amount,
 }) => {
   return (
-    <Stack spacing={.3}>
+    <Stack my={.3} >
       <Typography
         variant="h7"
         fontFamily={"sans"}
